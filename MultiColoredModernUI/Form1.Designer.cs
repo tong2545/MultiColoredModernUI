@@ -42,8 +42,10 @@
             this.btnCloseChildForm = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelDesktopPane = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
@@ -76,7 +78,7 @@
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.Size = new System.Drawing.Size(200, 46);
             this.btnSetting.TabIndex = 4;
-            this.btnSetting.Text = "Setting";
+            this.btnSetting.Text = "Others";
             this.btnSetting.UseVisualStyleBackColor = true;
             this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
             // 
@@ -205,16 +207,17 @@
             // 
             // btnCloseChildForm
             // 
+            this.btnCloseChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnCloseChildForm.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnCloseChildForm.FlatAppearance.BorderSize = 0;
             this.btnCloseChildForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCloseChildForm.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnCloseChildForm.Location = new System.Drawing.Point(0, 0);
             this.btnCloseChildForm.Name = "btnCloseChildForm";
-            this.btnCloseChildForm.Size = new System.Drawing.Size(114, 100);
+            this.btnCloseChildForm.Size = new System.Drawing.Size(75, 100);
             this.btnCloseChildForm.TabIndex = 0;
             this.btnCloseChildForm.Text = "Close";
-            this.btnCloseChildForm.UseVisualStyleBackColor = true;
+            this.btnCloseChildForm.UseVisualStyleBackColor = false;
             this.btnCloseChildForm.Click += new System.EventHandler(this.btnCloseChildForm_Click);
             // 
             // lblTitle
@@ -231,6 +234,8 @@
             // panelDesktopPane
             // 
             this.panelDesktopPane.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panelDesktopPane.Controls.Add(this.label4);
+            this.panelDesktopPane.Controls.Add(this.label3);
             this.panelDesktopPane.Controls.Add(this.label2);
             this.panelDesktopPane.Controls.Add(this.pictureBox1);
             this.panelDesktopPane.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -239,25 +244,48 @@
             this.panelDesktopPane.Size = new System.Drawing.Size(993, 528);
             this.panelDesktopPane.TabIndex = 2;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe Script", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(350, 362);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(233, 80);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "NuShop";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::MultiColoredModernUI.Properties.Resources._92b1f760;
-            this.pictureBox1.Location = new System.Drawing.Point(413, 127);
+            this.pictureBox1.Location = new System.Drawing.Point(261, 57);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(156, 154);
+            this.pictureBox1.Size = new System.Drawing.Size(405, 344);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // label2
+            // label3
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe Script", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(412, 272);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(157, 53);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "NuShop";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label3.ForeColor = System.Drawing.Color.IndianRed;
+            this.label3.Location = new System.Drawing.Point(702, 501);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(72, 18);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "ข้อแนะนำ :";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label4.Location = new System.Drawing.Point(780, 501);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(192, 18);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "กรุณาซื้อและจ่ายของทีละประเภท";
             // 
             // FormMainMenu
             // 
@@ -299,6 +327,8 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
     }
 }
 
